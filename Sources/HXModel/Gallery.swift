@@ -8,21 +8,21 @@
 import Foundation
 
 public class Gallery: Codable {
-    var id: Int64?
-    var title: String?
-    var url: String?
-    var thumbnail: String?
-    var info: String?
-    var width: Int?
-    var height: Int?
-    var roleId: Int64?
-    var roleName: String?
-    var worksId: Int64?
-    var worksName: String?
-    var type: Int?
-    var uuid:String?
+    public var id: Int64?
+    public var title: String?
+    public var url: String?
+    public var thumbnail: String?
+    public var info: String?
+    public var width: Int?
+    public var height: Int?
+    public var roleId: Int64?
+    public var roleName: String?
+    public var worksId: Int64?
+    public var worksName: String?
+    public var type: Int?
+    public var uuid:String?
     
-    init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roleId: Int64? = nil, roleName: String? = nil, worksId: Int64? = nil, worksName: String? = nil, type:Int? = 0, uuid:String? = nil) {
+    public init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roleId: Int64? = nil, roleName: String? = nil, worksId: Int64? = nil, worksName: String? = nil, type:Int? = 0, uuid:String? = nil) {
         self.id = id
         self.title = title
         self.url = url
