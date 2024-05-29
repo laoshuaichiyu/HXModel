@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Role: Codable {
+public class Role: Codable {
     var id: Int64?
     var name: String?
     var worksId: Int64?

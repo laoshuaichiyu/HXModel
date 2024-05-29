@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Gallery: Codable {
+public class Gallery: Codable {
     var id: Int64?
     var title: String?
     var url: String?
