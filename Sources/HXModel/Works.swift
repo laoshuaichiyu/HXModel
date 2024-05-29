@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Works: Codable {
+public class Works: Codable, Hashable {
     public var id: Int64?
     public var name: String?
     
@@ -19,5 +19,13 @@ public class Works: Codable {
     public init(works:Works) {
         self.id = works.id
         self.name = works.name
+    }
+    
+    public static func == (lhs: Works, rhs: Works) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        self.id?.hash(into: &hasher)
     }
 }

@@ -7,7 +7,8 @@
 
 import Foundation
 
-public class Gallery: Codable {
+public class Gallery: Codable, Hashable {
+    
     public var id: Int64?
     public var title: String?
     public var url: String?
@@ -36,5 +37,13 @@ public class Gallery: Codable {
         self.worksName = worksName
         self.type = type
         self.uuid = uuid
+    }
+    
+    public static func == (lhs: Gallery, rhs: Gallery) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        self.id?.hash(into: &hasher)
     }
 }
