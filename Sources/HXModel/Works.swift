@@ -8,10 +8,10 @@
 import Foundation
 
 public class Works: Codable, Hashable {
-    public var id: Int64?
-    public var name: String?
+    public var id: Int64
+    public var name: String
     
-    public init(id: Int64? = nil, name: String? = "") {
+    public init(id: Int64 = 0, name: String = "世界树") {
         self.id = id
         self.name = name
     }
@@ -26,6 +26,6 @@ public class Works: Codable, Hashable {
     }
     
     public func hash(into hasher: inout Hasher) {
-        self.id?.hash(into: &hasher)
+        self.id.hash(into: &hasher)
     }
 }
