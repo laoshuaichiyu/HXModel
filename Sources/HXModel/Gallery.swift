@@ -18,9 +18,9 @@ public class Gallery: Codable, Hashable {
     public var height: Int?
     public var roles:[Role] = []
     public var type: Int?
-    public var uuid:String?
+    public var uuid:Int64?
     
-    public init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roles:[Role], type:Int? = 0, uuid:String? = nil) {
+    public init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roles:[Role], type:Int? = 0, uuid:Int64? = nil) {
         self.id = id
         self.title = title
         self.url = url
