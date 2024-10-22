@@ -16,14 +16,11 @@ public class Gallery: Codable, Hashable {
     public var info: String?
     public var width: Int?
     public var height: Int?
-    public var roleId: Int64?
-    public var roleName: String?
-    public var worksId: Int64?
-    public var worksName: String?
+    public var roles:[Role] = []
     public var type: Int?
     public var uuid:String?
     
-    public init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roleId: Int64? = nil, roleName: String? = nil, worksId: Int64? = nil, worksName: String? = nil, type:Int? = 0, uuid:String? = nil) {
+    public init(id: Int64? = nil, title: String? = nil, url: String? = nil, thumbnail:String? = nil, info:String? = nil, width: Int? = nil, height: Int? = nil, roles:[Role], type:Int? = 0, uuid:String? = nil) {
         self.id = id
         self.title = title
         self.url = url
@@ -31,10 +28,7 @@ public class Gallery: Codable, Hashable {
         self.info = info
         self.width = width
         self.height = height
-        self.roleId = roleId
-        self.roleName = roleName
-        self.worksId = worksId
-        self.worksName = worksName
+        self.roles = roles
         self.type = type
         self.uuid = uuid
     }
