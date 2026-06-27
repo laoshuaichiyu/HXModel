@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Gallery: Codable, Hashable {
+public struct Gallery: Codable, Hashable, Sendable {
     
     public var id: Int64?
     public var title: String?

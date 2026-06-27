@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Works: Codable, Hashable {
+public struct Works: Codable, Hashable, Sendable {
     public var id: Int64
     public var name: String
     

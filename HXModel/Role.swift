@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Role: Codable, Hashable {
+public struct Role: Codable, Hashable, Sendable {
     public var id: Int64
     public var name: String
     public var worksId: Int64
