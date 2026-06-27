@@ -13,7 +13,7 @@ public struct Role: Codable, Hashable, Sendable {
     public var worksId: Int64
     public var worksName: String
     
-    public init(id: Int64 = 0, name: String = "世界树", worksId: Int64 = 0, worksName: String = "世界树") {
+    public init(id: Int64, name: String = "世界树", worksId: Int64 = 0, worksName: String = "世界树") {
         self.id = id
         self.name = name
         self.worksId = worksId
