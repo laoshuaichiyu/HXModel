@@ -12,6 +12,8 @@ public struct Playlist: Codable, Hashable, Sendable {
     var description: String?
     var type: String?
     var createdAt:Date
+    var num:Int?
+    var gallery:Gallery?
     
     public static func == (lhs: Playlist, rhs: Playlist) -> Bool {
         return lhs.id == rhs.id
