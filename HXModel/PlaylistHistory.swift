@@ -8,7 +8,7 @@
 import Foundation
 
 public struct PlaylistHistory: Codable, Hashable, Sendable {
-    var id:Int64?
+    var id:Int64
     var gallery: Gallery
     var playedAt: Date?
     var duration: Int?

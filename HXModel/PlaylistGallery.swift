@@ -7,7 +7,7 @@
 
 import Foundation
 public struct PlaylistGallery: Codable, Hashable, Sendable {
-    var id:Int64?
+    var id:Int64
     var playlist: Playlist
     var gallery: Gallery
     var position: Int

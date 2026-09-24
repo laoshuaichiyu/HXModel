@@ -7,7 +7,7 @@
 
 import Foundation
 public struct Playlist: Codable, Hashable, Sendable {
-    var id: Int64?
+    var id: Int64
     var name: String?
     var description: String?
     var type: String?
