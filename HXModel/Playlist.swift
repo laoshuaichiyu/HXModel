@@ -7,13 +7,13 @@
 
 import Foundation
 public struct Playlist: Codable, Hashable, Sendable {
-    var id: Int64
-    var name: String?
-    var description: String?
-    var type: String?
-    var createdAt:Date
-    var num:Int?
-    var gallery:Gallery?
+    public var id: Int64
+    public var name: String?
+    public var description: String?
+    public var type: String?
+    public var createdAt:Date
+    public var num:Int?
+    public var gallery:Gallery?
     
     public static func == (lhs: Playlist, rhs: Playlist) -> Bool {
         return lhs.id == rhs.id

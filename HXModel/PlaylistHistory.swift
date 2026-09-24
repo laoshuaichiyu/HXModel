@@ -8,10 +8,10 @@
 import Foundation
 
 public struct PlaylistHistory: Codable, Hashable, Sendable {
-    var id:Int64
-    var gallery: Gallery
-    var playedAt: Date?
-    var duration: Int?
+    public var id:Int64
+    public var gallery: Gallery
+    public var playedAt: Date?
+    public var duration: Int?
     
     public static func == (lhs: PlaylistHistory, rhs: PlaylistHistory) -> Bool {
         return lhs.id == rhs.id

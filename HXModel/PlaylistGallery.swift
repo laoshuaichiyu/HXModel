@@ -7,11 +7,11 @@
 
 import Foundation
 public struct PlaylistGallery: Codable, Hashable, Sendable {
-    var id:Int64
-    var playlist: Playlist
-    var gallery: Gallery
-    var position: Int
-    var addedAt: Date?
+    public var id:Int64
+    public var playlist: Playlist
+    public var gallery: Gallery
+    public var position: Int
+    public var addedAt: Date?
     
     public static func == (lhs: PlaylistGallery, rhs: PlaylistGallery) -> Bool {
         return lhs.id == rhs.id
