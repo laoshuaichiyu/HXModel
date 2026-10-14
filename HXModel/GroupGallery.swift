@@ -6,14 +6,16 @@
 //
 
 import Foundation
-public struct PlaylistGallery: Codable, Hashable, Sendable {
+public struct GroupGallery: Codable, Hashable, Sendable {
     public var id:Int64
-    public var playlist: Playlist
+    public var playlist: Group
     public var gallery: Gallery
     public var position: Int
     public var addedAt: Date?
+    public var language:String?
+    public var label:String?
     
-    public static func == (lhs: PlaylistGallery, rhs: PlaylistGallery) -> Bool {
+    public static func == (lhs: GroupGallery, rhs: GroupGallery) -> Bool {
         return lhs.id == rhs.id
     }
     

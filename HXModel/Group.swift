@@ -6,16 +6,21 @@
 //
 
 import Foundation
-public struct Playlist: Codable, Hashable, Sendable {
+public struct Group: Codable, Hashable, Sendable {
     public var id: Int64
     public var name: String?
     public var description: String?
-    public var type: String?
+    /* 1:同一视频的多个版本，
+     * 2：系列视频，例如动漫分集，
+     * 3：普通合集，
+     * 4：歌单，
+     * 5：其他相关视频*/
+    public var type: Int?
     public var createdAt:Date
     public var num:Int?
     public var gallery:Gallery?
     
-    public static func == (lhs: Playlist, rhs: Playlist) -> Bool {
+    public static func == (lhs: Group, rhs: Group) -> Bool {
         return lhs.id == rhs.id
     }
     
